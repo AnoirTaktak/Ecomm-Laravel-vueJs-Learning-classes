@@ -5,27 +5,27 @@
             <div class="row">
                 <div class="col-md-6">.
                     <label for="reference" class="form-label">Référence</label>
-                    <input type="text" class="form-control" id="reference" vmodel="article.reference">
+                    <input type="text" class="form-control" id="reference" v-model="article.reference">
                 </div>
                 <div class="col-md-6 ms-auto">
                     <label for="designation" class="form-label">Désignation</label>
-                    <input type="texte" class="form-control" id="designation" vmodel="article.designation">
+                    <input type="texte" class="form-control" id="designation" v-model="article.designation">
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">.
                     <label for="marque" class="form-label">Marque</label>
-                    <input type="text" class="form-control" id="marque" vmodel="article.marque">
+                    <input type="text" class="form-control" id="marque" v-model="article.marque">
                 </div>
                 <div class="col-md-6 ms-auto">
                     <label for="Quantité" class="form-label">Qtock</label>
-                    <input type="texte" class="form-control" id="qtestock" vmodel="article.qtestock">
+                    <input type="texte" class="form-control" id="qtestock" v-model="article.qtestock">
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">.
                     <label for="prix" class="form-label">Prix</label>
-                    <input type="text" class="form-control" id="prix" vmodel="article.prix">
+                    <input type="text" class="form-control" id="prix" v-model="article.prix">
                 </div>
                 <div class="col-md-6 ms-auto">
                     <label for="scategorie" class="form-label">Sous Catégorie</label>
@@ -37,7 +37,7 @@
             <div class="row">
                 <div class="col-md-12">.
                     <label for="prix" class="form-label">Image</label>
-                    <input type="text" class="form-control" id="imageart" vmodel="article.imageart">
+                    <input type="text" class="form-control" id="imageart" v-model="article.imageart">
                 </div>
             </div>
             <br />
@@ -74,7 +74,7 @@ const getscategories = () => {
     });
 }
 const addArticle = async () => {
-    await axios.post("http://localhost:8000/api/articles/", article.value)
+    await axios.post("http://localhost:8000/api/articles", article.value)
         .then(() => (
             router.push({ name: 'Viewarticles' })
         ))

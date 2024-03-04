@@ -12,4 +12,9 @@ export const routes = [
         path: "/addarticle",
         component: Addaticle,
     },
+    {
+        name:'Accueil',
+        path:  '/',
+        component: accueil
+    }
 ];
