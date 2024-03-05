@@ -32,9 +32,13 @@
                         <td>{{ art.marque }}</td>
                         <td>{{ art.qtestock }}</td>
                         <td>{{ art.prix }}</td>
-                        <td><button class="btn btn-outline-primary mx2">
-                                <i class="fa-solid fa-pen-to-square"></i>
-                                Edit</button></td>
+                        <td>
+                            <router-link :to="{name: 'editarticle', params: { id: art.id }}"
+                            class="btn btn-outline-warning mx-2">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            Modifier
+                            </router-link>
+                        </td>
                         <td><button class="btn btn-outline-danger mx2" @click="deletearticle(art.id)">
                                 <i class="fa-solid fa-trash-can"></i>
                                 Delete
