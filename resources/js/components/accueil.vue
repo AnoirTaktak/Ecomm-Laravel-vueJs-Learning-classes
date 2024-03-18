@@ -8,6 +8,7 @@
                 </div>
                 <router-link to="/listart"><button type="button" class="btn btn-primary btn-lg">Liste Articles</button></router-link>
                 <router-link to="/addarticle"><button type="button" class="btn btn-secondary btn-lg">Ajouter Article</button></router-link>
+
             </div>
         </div>
     </div>

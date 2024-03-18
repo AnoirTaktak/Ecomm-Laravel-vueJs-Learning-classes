@@ -1,7 +1,11 @@
 import Viewarticles from "./components/articles/Viewarticles.vue";
 import Addaticle from "./components/articles/Addarticle.vue";
-import Editarticle from "./components/articles/Editarticle.vue"
+
 import accueil from "./components/accueil.vue";
+import Viewarticletable from "./components/articles/Viewarticletable.vue";
+import Editarticle from "./components/articles/Editarticle.vue";
+
+
 export const routes = [
     {
         name: "Viewarticles",
@@ -23,4 +27,10 @@ export const routes = [
         path:"/editarticle/:id",
         component:Editarticle
     },
+    {
+        name:"Viewarticletable",
+        path:"/articletable",
+        component:Viewarticletable
+    }
+
 ];
