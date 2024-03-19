@@ -4,6 +4,7 @@ import Addaticle from "./components/articles/Addarticle.vue";
 import accueil from "./components/accueil.vue";
 import Viewarticletable from "./components/articles/Viewarticletable.vue";
 import Editarticle from "./components/articles/Editarticle.vue";
+import Addarticletable from "./components/articles/Addarticletable.vue";
 
 
 export const routes = [
@@ -31,6 +32,11 @@ export const routes = [
         name:"Viewarticletable",
         path:"/articletable",
         component:Viewarticletable
+    },
+    {
+        name: "Addarticletable",
+        path: "/addarticletable",
+        component: Addarticletable,
     }
 
 ];

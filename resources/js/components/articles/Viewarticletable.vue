@@ -1,6 +1,6 @@
 <template>
-    
-    <Addarticletable />
+
+    <Addarticletable></Addarticletable>
     <div class="card">
         <DataTable :value="articles" stripedRows paginator showGridlines :rows="8" dataKey="id" :loading="isLoading">
             <Column header="Image">
@@ -16,7 +16,8 @@
             <Column field="id" header="Actions" style="min-width: 12rem">
                 <template #body="val">
                     <div class="d-flex">
-                        <Editarticletable :art="val.data" />
+                        <Cardarticle :art="val.data"></Cardarticle>
+                        <Editarticletable :art="val.data"></Editarticletable>
                         <button type="button" class="btn btn-warning rounded-circle "
                             @click="deletearticle(val.data.id)">
                             <span style="color: rgb(245, 5, 5)">
@@ -34,6 +35,9 @@ import api from '../config/api.js';
 import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';
 import { ref, onMounted } from 'vue';
+import Addarticletable from "./Addarticletable.vue";
+import Editarticletable from "./Editarticletable.vue";
+import Cardarticle from "./Cardarticle.vue";
 
 const articles = ref([])
 const isLoading = ref(true)
