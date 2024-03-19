@@ -1,3 +1,23 @@
 <template>
-    <router-view> </router-view>
-</template>
+    <div>
+      <Menu class="sticky-header"/>
+      <router-view></router-view>
+    </div>
+  </template>
+
+  <script setup>
+  import Menu from './components/Menu.vue';
+  </script>
+
+  <style scoped>
+  .sticky-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f1f1f1;
+      padding: 10px;
+      z-index: 1000;
+      /* Add other styles as needed */
+  }
+  </style>

@@ -20,6 +20,8 @@
         "vue": "^3.4.21",
         "vue-filepond": "^7.0.4",
         "vue-loader": "^17.3.1",
-        "vue-router": "^4.3.0"
+        "vue-router": "^4.3.0",
+        "vuex": "^4.0.2",
+        "vuex-persistedstate": "^4.1.0"
     }
 }

@@ -1,6 +1,6 @@
 <template>
 
-    <Addarticletable></Addarticletable>
+
     <div class="card">
         <DataTable :value="articles" stripedRows paginator showGridlines :rows="8" dataKey="id" :loading="isLoading">
             <Column header="Image">
@@ -28,6 +28,7 @@
                 </template>
             </Column>
         </DataTable>
+        <Addarticletable></Addarticletable>
     </div>
 </template>
 <script setup>
