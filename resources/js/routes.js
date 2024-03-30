@@ -6,6 +6,7 @@ import Viewarticletable from "./components/articles/Viewarticletable.vue";
 import Editarticle from "./components/articles/Editarticle.vue";
 import Addarticletable from "./components/articles/Addarticletable.vue";
 import Cart from './components/cart/Cart.vue';
+import Payment from './components/cart/Payment.vue';
 
 
 
@@ -50,6 +51,13 @@ export const routes = [
         name:'Cart',
         component:Cart
     },
+    {
+        path:'/payment',
+        name:'Payment',
+        component:Payment
+    },
+
+
 
 
 ];

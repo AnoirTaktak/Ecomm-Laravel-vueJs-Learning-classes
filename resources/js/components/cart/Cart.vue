@@ -56,7 +56,8 @@
                                 TND</span>
                         </div>
                         <p>Taxes and shipping calculated at checkout</p>
-                        <button>Check out</button>
+                        <router-link :to="{name: 'Payment'}" > <button class="btn btn-info"> CHECKOUT
+                        </button> </router-link>
                         <div class="continue-shopping">
                             <router-link :to="{ name: 'HomeCart' }">
                                 <button class="btn btn-success">
